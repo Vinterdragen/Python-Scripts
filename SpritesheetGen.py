@@ -25,9 +25,7 @@ root.attributes('-topmost', True) # Opened windows will be active. above all win
 
 
 """
-Set up the maximum number of images per row
-Keep it even if you care about mipmaps in your engine
-
+Sets up the maximum number of images per row
 """
 max_frames_row = 8.0 
 
