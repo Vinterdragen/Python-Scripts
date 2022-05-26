@@ -11,11 +11,11 @@ ArtStation: www.artstation.com/simoncarmona
 
 """
 
-"""Folder """
+"""Image manipulation library"""
 from PIL import Image
 import os, math
 
-"""Folder select GUI library"""
+"""GUI library for the prompts"""
 import tkinter
 from tkinter import Tk, filedialog, simpledialog
 
