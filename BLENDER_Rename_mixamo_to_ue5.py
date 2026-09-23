@@ -4,7 +4,7 @@ bl_info = {
     "version": (1, 0),
     "blender": (3, 0, 0),
     "location": "View3D > Sidebar > TA Tools",
-    "description": "Renames Mixamo's bones to the Unreal Engine 5 standard. Non-standard bones keep untouched, so make sure to delete those after if you don't want them.",
+    "description": "Renames Mixamo's bones to the Unreal Engine 5 standard. Non-standard bones keep untouched, so if you don't want them make sure to delete those after.",
     "category": "Rigging",
 }
 
