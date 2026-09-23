@@ -1,17 +1,17 @@
 bl_info = {
     "name": "Mixamo to UE5 Bone Renamer",
-    "author": "TA Tools",
+    "author": "Simon Carmona. 2026.",
     "version": (1, 0),
     "blender": (3, 0, 0),
     "location": "View3D > Sidebar > TA Tools",
-    "description": "Renombra huesos de Mixamo al estándar de Unreal Engine 5",
+    "description": "Renames Mixamo's bones to the Unreal Engine 5 standard. Non-standard bones keep untouched, so make sure to delete those after if you don't want them.",
     "category": "Rigging",
 }
 
 import bpy
 
 class RIGGING_OT_mixamo_to_ue5(bpy.types.Operator):
-    """Renombra huesos seleccionados de Mixamo a UE5"""
+    """Renames Mixamo's bones to the Unreal Engine 5 standard."""
     bl_idname = "rigging.mixamo_to_ue5"
     bl_label = "Rename Mixamo to UE5"
     bl_options = {'REGISTER', 'UNDO'}
@@ -20,7 +20,7 @@ class RIGGING_OT_mixamo_to_ue5(bpy.types.Operator):
         obj = context.active_object
 
         if not obj or obj.type != 'ARMATURE':
-            self.report({'WARNING'}, "Selecciona un Armature activo.")
+            self.report({'WARNING'}, "Select an active Armature")
             return {'CANCELLED'}
 
         bone_mapping = {
